@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #fef6e4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   header {
@@ -25,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
     margin-top: 0.5rem;
   }
   
@@ -56,6 +60,7 @@ body {
     max-width: 800px;
     margin: 2rem auto;
     border-left: 5px solid #ff6f61;
+    box-sizing: border-box;
   }
   
   footer {
@@ -63,19 +68,54 @@ body {
     padding: 1rem;
     background-color: #333;
     color: white;
+    margin-top: auto;
   }
   
-  /* Add these styles */
-html, body {
-    height: 100%;
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .hero {
+      padding: 3rem 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .intro {
+      padding: 1.5rem 1rem;
+      margin: 1.5rem 1rem;
+    }
   }
   
-  body {
-    display: flex;
-    flex-direction: column;
-  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.75rem;
+    }
   
-  main {
-    flex: 1;
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.25rem;
+    }
+  
+    .intro h3 {
+      font-size: 1.25rem;
+    }
+  
+    .intro p {
+      font-size: 1rem;
+    }
   }
   
