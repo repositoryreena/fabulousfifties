@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef6e4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/52/1950s_Diner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .intro {
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-left: 5px solid #ff6f61;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Add these styles */
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
